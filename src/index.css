@@ -1,13 +1,91 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Poppins", sans-serif;
+}
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+}
+.character-card {
+  background-color: #dbf6e9;
+  height: 190px;
+}
+.card-info {
+  display: inline-flex;
+  align-items: center;
+}
+.header-bg {
+  background-color: white;
+}
+
+.character-card-body {
+  background-color: #efeeb4;
+}
+.character-card-title {
+  background-color: #dad873;
+}
+.character-container {
+  height: 900px;
+  overflow-y: scroll;
+  background-color: white;
+}
+.card-border-radius {
+  border-radius: 25px;
+}
+.row-border-radius {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.btn-border-radius {
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.account-container {
+  background-color: #a8d7b2;
+}
+.button-color {
+  background-color: #454d66;
+}
+.account-border-radius {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+#navbarHeader {
+  height: 7vh;
 }
